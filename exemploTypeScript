@@ -1,0 +1,19 @@
+interface DadosDoUsuario {
+    id: string, nome: string, email: string
+}
+
+function cadastrarUsuario({ id, nome, email }: DadosDoUsuario) {
+    console.log(id, nome, email)
+}
+
+class CadastrarAdministrador {
+    cadastro() {
+        cadastrarUsuario("1", "Denis", "denis.si2011@gmail.com");
+    }
+}
+
+class CadastrarVendedor {
+    cadastro() {
+        cadastrarUsuario(2, "Dani", "dani@gmai.com");
+    }
+}
